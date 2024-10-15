@@ -1,0 +1,20 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Identity {
+    string name;
+    uint age;
+
+    constructor() {
+        name = "Ravi";
+        age = 31;
+    }
+
+    function getName() public view returns (string memory) {
+        return name;
+    }
+
+    function getAge() public view returns (uint) {
+        return age;
+    }
+}
